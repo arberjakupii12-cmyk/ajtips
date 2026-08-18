@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>AJ Tips | Premium Football Predictions</title>
+
+  <style>
+
+    * {
+
+      box-sizing: border-box;
+
+      margin: 0;
+
+      padding: 0;
+
+    }
+
+    body {
+
+      font-family: Arial, Helvetica, sans-serif;
+
+      background: #07090d;
+
+      color: white;
+
+    }
+
+    header {
+
+      background: #0c1017;
+
+      border-bottom: 1px solid #242a33;
+
+      padding: 18px 7%;
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 10;
+
+    }
+
+    .logo {
+
+      font-size: 28px;
+
+      font-weight: 900;
+
+      letter-spacing: 1px;
+
+    }
+
+    .logo span {
+
+      color: #19d66b;
+
+    }
+
+    nav a {
+
+      color: #ddd;
+
+      text-decoration: none;
+
+      margin-left: 22px;
+
+      font-size: 14px;
+
+    }
+
+    nav a:hover {
+
+      color: #19d66b;
+
+    }
+
+    .hero {
+
+      min-height: 650px;
+
+      display: flex;
+
+      align-items: center;
+
+      padding: 70px 7%;
+
+      background:
+
+        radial-gradient(circle at 80% 30%, #123d27 0, transparent 30%),
+
+        linear-gradient(135deg, #07090d, #0c121a);
+
+    }
+
+    .hero-content {
+
+      max-width: 720px;
+
+    }
+
+    .badge {
+
+      display: inline-block;
+
+      background: #10251a;
+
+      color: #19d66b;
+
+      padding: 9px 15px;
+
+      border-radius: 30px;
+
+      font-size: 13px;
+
+      font-weight: bold;
+
+      margin-bottom: 22px;
+
+    }
+
+    h1 {
+
+      font-size: clamp(45px, 8vw, 82px);
+
+      line-height: .95;
+
+      margin-bottom: 25px;
+
+    }
+
+    h1 span {
+
+      color: #19d66b;
+
+    }
+
+    .hero p {
+
+      color: #aeb5bf;
+
+      font-size: 18px;
+
+      line-height: 1.6;
+
+      max-width: 600px;
+
+      margin-bottom: 32px;
+
+    }
+
+    .buttons {
+
+      display: flex;
+
+      gap: 14px;
+
+      flex-wrap: wrap;
+
+    }
+
+    .btn {
+
+      display: inline-block;
+
+      padding: 15px 25px;
+
+      border-radius: 9px;
+
+      text-decoration: none;
+
+      font-weight: bold;
+
+    }
+
+    .primary {
+
+      background: #19d66b;
+
+      color: #06100a;
+
+    }
+
+    .secondary {
+
+      border: 1px solid #343c47;
+
+      color: white;
+
+      background: #11161e;
+
+    }
+
+    section {
+
+      padding: 70px 7%;
+
+    }
+
+    .section-title {
+
+      font-size: 34px;
+
+      margin-bottom: 10px;
+
+    }
+
+    .section-subtitle {
+
+      color: #8f98a5;
+
+      margin-bottom: 35px;
+
+    }
+
+    .cards {
+
+      display: grid;
+
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+
+      gap: 20px;
+
+    }
+
+    .card {
+
+      background: #0e131a;
+
+      border: 1px solid #252c36;
+
+      border-radius: 15px;
+
+      padding: 25px;
+
+    }
+
+    .card h3 {
+
+      margin-bottom: 15px;
+
+    }
+
+    .match {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      align-items: center;
+
+      padding: 13px 0;
+
+      border-bottom: 1px solid #242a33;
+
+    }
+
+    .prediction {
+
+      color: #19d66b;
+
+      font-weight: bold;
+
+    }
+
+    .vip {
+
+      background: linear-gradient(135deg, #102619, #0c1117);
+
+      border: 1px solid #19d66b;
+
+    }
+
+    .vip-label {
+
+      color: #19d66b;
+
+      font-size: 12px;
+
+      font-weight: bold;
+
+      margin-bottom: 10px;
+
+    }
+
+    .contact {
+
+      text-align: center;
+
+      background: #0b1016;
+
+    }
+
+    footer {
+
+      text-align: center;
+
+      padding: 30px;
+
+      color: #68717d;
+
+      border-top: 1px solid #222831;
+
+    }
+
+    @media (max-width: 700px) {
+
+      header {
+
+        padding: 16px 5%;
+
+      }
+
+      nav a {
+
+        margin-left: 9px;
+
+        font-size: 12px;
+
+      }
+
+      .hero {
+
+        padding: 65px 5%;
+
+      }
+
+      section {
+
+        padding: 55px 5%;
+
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">AJ<span>TIPS</span></div>
+
+  <nav>
+
+    <a href="#home">Home</a>
+
+    <a href="#tips">Tips</a>
+
+    <a href="#vip">VIP</a>
+
+    <a href="#results">Results</a>
+
+    <a href="#contact">Contact</a>
+
+  </nav>
+
+</header>
+
+<section class="hero" id="home">
+
+  <div class="hero-content">
+
+    <div class="badge">⚽ PREMIUM FOOTBALL PREDICTIONS</div>
+
+    <h1>
+
+      Football Tips.<br>
+
+      <span>Made Simple.</span>
+
+    </h1>
+
+    <p>
+
+      Welcome to AJ Tips. Follow our football predictions,
+
+      daily selections and premium VIP tips all in one place.
+
+    </p>
+
+    <div class="buttons">
+
+      <a class="btn primary" href="#tips">View Today's Tips</a>
+
+      <a
+
+        class="btn secondary"
+
+        href="https://wa.me/38348800023"
+
+        target="_blank">
+
+        Contact on WhatsApp
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="tips">
+
+  <h2 class="section-title">Today's Tips</h2>
+
+  <p class="section-subtitle">
+
+    Latest football selections
+
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <h3>⚽ Match Prediction</h3>
+
+      <div class="match">
+
+        <span>Team A</span>
+
+        <span class="prediction">1X</span>
+
+      </div>
+
+      <div class="match">
+
+        <span>Team B</span>
+
+        <span class="prediction">Over 2.5</span>
+
+      </div>
+
+      <div class="match">
+
+        <span>Team C</span>
+
+        <span class="prediction">BTTS</span>
+
+      </div>
+
+    </div>
+
+    <div class="card">
+
+      <h3>🔥 Daily Selection</h3>
+
+      <div class="match">
+
+        <span>Selection</span>
+
+        <span class="prediction">Over 1.5</span>
+
+      </div>
+
+      <div class="match">
+
+        <span>Confidence</span>
+
+        <span class="prediction">HIGH</span>
+
+      </div>
+
+      <div class="match">
+
+        <span>Status</span>
+
+        <span class="prediction">FREE</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="vip">
+
+  <h2 class="section-title">VIP Tips</h2>
+
+  <p class="section-subtitle">
+
+    Premium selections for our members
+
+  </p>
+
+  <div class="cards">
+
+    <div class="card vip">
+
+      <div class="vip-label">🔒 VIP PREMIUM</div>
+
+      <h3>Today's VIP Ticket</h3>
+
+      <p style="color:#9da6b2; margin:15px 0;">
+
+        Access premium football selections and detailed analysis.
+
+      </p>
+
+      <a
+
+        class="btn primary"
+
+        href="https://wa.me/38348800023"
+
+        target="_blank">
+
+        Get VIP Access
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section id="results">
+
+  <h2 class="section-title">Recent Results</h2>
+
+  <p class="section-subtitle">
+
+    Previous selections
+
+  </p>
+
+  <div class="cards">
+
+    <div class="card">
+
+      <div class="match">
+
+        <span>Example Match</span>
+
+        <span class="prediction">WIN ✅</span>
+
+      </div>
+
+      <div class="match">
+
+        <span>Example Match</span>
+
+        <span class="prediction">WIN ✅</span>
+
+      </div>
+
+      <div class="match">
+
+        <span>Example Match</span>
+
+        <span style="color:#ff5555;font-weight:bold;">LOSS ❌</span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+<section class="contact" id="contact">
+
+  <h2 class="section-title">Contact AJ Tips</h2>
+
+  <p class="section-subtitle">
+
+    For VIP access and more information
+
+  </p>
+
+  <a
+
+    class="btn primary"
+
+    href="https://wa.me/38348800023"
+
+    target="_blank">
+
+    💬 WhatsApp AJ Tips
+
+  </a>
+
+</section>
+
+<footer>
+
+  © 2026 AJ Tips — Premium Football Predictions
+
+</footer>
+
+</body>
+
+</html>
