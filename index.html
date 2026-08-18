@@ -8,7 +8,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>AJ TIPS | Premium Football Predictions</title>
+<title>AJ TIPS | Football Predictions</title>
 
 <style>
 
@@ -36,8 +36,6 @@ body{
 
   color:#fff;
 
-  overflow-x:hidden;
-
 }
 
 header{
@@ -56,9 +54,7 @@ header{
 
   align-items:center;
 
-  background:rgba(5,7,8,.94);
-
-  backdrop-filter:blur(15px);
+  background:rgba(5,7,8,.95);
 
   border-bottom:1px solid #1c2721;
 
@@ -69,8 +65,6 @@ header{
   font-size:27px;
 
   font-weight:900;
-
-  letter-spacing:1px;
 
 }
 
@@ -84,21 +78,19 @@ nav{
 
   display:flex;
 
-  gap:22px;
+  gap:18px;
 
 }
 
 nav a{
 
-  color:#b8c0bc;
+  color:#bbb;
 
   text-decoration:none;
 
-  font-size:14px;
+  font-size:13px;
 
   font-weight:bold;
-
-  transition:.3s;
 
 }
 
@@ -110,59 +102,25 @@ nav a:hover{
 
 .hero{
 
-  min-height:680px;
+  min-height:650px;
 
   display:flex;
 
   align-items:center;
 
-  padding:90px 6%;
-
-  position:relative;
-
-  overflow:hidden;
+  padding:80px 6%;
 
   background:
 
-    radial-gradient(circle at 85% 25%,rgba(32,232,121,.20),transparent 28%),
-
-    radial-gradient(circle at 10% 80%,rgba(32,232,121,.08),transparent 25%),
+    radial-gradient(circle at 85% 25%,rgba(32,232,121,.20),transparent 30%),
 
     linear-gradient(135deg,#050708,#0a100d);
-
-}
-
-.hero:after{
-
-  content:"";
-
-  position:absolute;
-
-  width:350px;
-
-  height:350px;
-
-  right:-150px;
-
-  bottom:-150px;
-
-  background:#20e879;
-
-  opacity:.06;
-
-  border-radius:50%;
-
-  filter:blur(20px);
 
 }
 
 .hero-content{
 
   max-width:800px;
-
-  position:relative;
-
-  z-index:2;
 
 }
 
@@ -182,7 +140,7 @@ nav a:hover{
 
   font-size:12px;
 
-  font-weight:800;
+  font-weight:bold;
 
   margin-bottom:25px;
 
@@ -193,8 +151,6 @@ h1{
   font-size:clamp(48px,9vw,86px);
 
   line-height:.92;
-
-  letter-spacing:-3px;
 
   margin-bottom:28px;
 
@@ -240,9 +196,7 @@ h1{
 
   text-decoration:none;
 
-  font-weight:800;
-
-  transition:.3s;
+  font-weight:bold;
 
 }
 
@@ -251,16 +205,6 @@ h1{
   background:#20e879;
 
   color:#031008;
-
-  box-shadow:0 0 25px rgba(32,232,121,.15);
-
-}
-
-.primary:hover{
-
-  transform:translateY(-3px);
-
-  box-shadow:0 8px 30px rgba(32,232,121,.25);
 
 }
 
@@ -271,12 +215,6 @@ h1{
   border:1px solid #2a3931;
 
   color:#fff;
-
-}
-
-.secondary:hover{
-
-  border-color:#20e879;
 
 }
 
@@ -298,17 +236,11 @@ h1{
 
 }
 
-.stat{
-
-  padding:10px;
-
-}
-
 .stat strong{
 
   display:block;
 
-  font-size:27px;
+  font-size:25px;
 
   color:#20e879;
 
@@ -324,13 +256,13 @@ h1{
 
 section{
 
-  padding:85px 6%;
+  padding:75px 6%;
 
 }
 
 .section-head{
 
-  margin-bottom:40px;
+  margin-bottom:35px;
 
 }
 
@@ -340,7 +272,7 @@ section{
 
   font-size:12px;
 
-  font-weight:900;
+  font-weight:bold;
 
   letter-spacing:2px;
 
@@ -350,7 +282,7 @@ section{
 
 .section-title{
 
-  font-size:38px;
+  font-size:36px;
 
   margin-bottom:10px;
 
@@ -382,16 +314,6 @@ section{
 
   padding:25px;
 
-  transition:.3s;
-
-}
-
-.card:hover{
-
-  transform:translateY(-5px);
-
-  border-color:#20e879;
-
 }
 
 .card h3{
@@ -408,7 +330,9 @@ section{
 
   align-items:center;
 
-  padding:15px 0;
+  gap:15px;
+
+  padding:16px 0;
 
   border-bottom:1px solid #1b251f;
 
@@ -428,15 +352,13 @@ section{
 
   font-weight:900;
 
+  white-space:nowrap;
+
 }
 
 .vip-section{
 
-  background:
-
-    radial-gradient(circle at 80% 50%,rgba(32,232,121,.12),transparent 35%),
-
-    #080d0a;
+  background:#080d0a;
 
 }
 
@@ -446,30 +368,6 @@ section{
 
   background:linear-gradient(145deg,#10251a,#080d0a);
 
-  position:relative;
-
-  overflow:hidden;
-
-}
-
-.vip:before{
-
-  content:"VIP";
-
-  position:absolute;
-
-  right:-25px;
-
-  top:15px;
-
-  font-size:65px;
-
-  font-weight:900;
-
-  color:#20e879;
-
-  opacity:.04;
-
 }
 
 .vip-label{
@@ -478,17 +376,11 @@ section{
 
   font-size:12px;
 
-  font-weight:900;
+  font-weight:bold;
 
   letter-spacing:2px;
 
   margin-bottom:12px;
-
-}
-
-.vip h3{
-
-  font-size:26px;
 
 }
 
@@ -506,7 +398,7 @@ section{
 
   color:#20e879;
 
-  font-weight:900;
+  font-weight:bold;
 
 }
 
@@ -514,7 +406,7 @@ section{
 
   color:#ff5555;
 
-  font-weight:900;
+  font-weight:bold;
 
 }
 
@@ -582,19 +474,19 @@ footer strong{
 
   nav{
 
-    gap:10px;
+    gap:9px;
 
   }
 
   nav a{
 
-    font-size:11px;
+    font-size:10px;
 
   }
 
   .hero{
 
-    min-height:620px;
+    min-height:600px;
 
     padding:70px 5%;
 
@@ -603,8 +495,6 @@ footer strong{
   h1{
 
     font-size:53px;
-
-    letter-spacing:-2px;
 
   }
 
@@ -622,25 +512,25 @@ footer strong{
 
   .stat strong{
 
-    font-size:21px;
+    font-size:20px;
 
   }
 
   .stat span{
 
-    font-size:11px;
+    font-size:10px;
 
   }
 
   section{
 
-    padding:65px 5%;
+    padding:60px 5%;
 
   }
 
   .section-title{
 
-    font-size:31px;
+    font-size:30px;
 
   }
 
@@ -698,9 +588,9 @@ footer strong{
 
     <p>
 
-      Welcome to AJ Tips — your destination for daily football
+      Welcome to AJ Tips — daily football predictions,
 
-      predictions, carefully selected tips and premium VIP selections.
+      selected tips and premium VIP selections.
 
     </p>
 
@@ -758,17 +648,27 @@ footer strong{
 
 </div>
 
+<!-- ================================================= -->
+
+<!-- 🔥 KËTU DO T'I NDRYSHOSH LOJËT ÇDO DITË -->
+
+<!-- ================================================= -->
+
 <section id="tips">
 
   <div class="section-head">
 
     <div class="tag">TODAY'S PICKS</div>
 
-    <h2 class="section-title">Today's Tips ⚡</h2>
+    <h2 class="section-title">
+
+      Today's Tips ⚡
+
+    </h2>
 
     <p class="section-subtitle">
 
-      Latest football selections
+      Daily football selections
 
     </p>
 
@@ -778,27 +678,53 @@ footer strong{
 
     <div class="card">
 
-      <h3>⚽ Match Predictions</h3>
+      <h3>⚽ Today's Matches</h3>
+
+      <!-- LOJA 1 -->
 
       <div class="match">
 
-        <span>Team A</span>
-
-        <span class="prediction">1X</span>
-
-      </div>
-
-      <div class="match">
-
-        <span>Team B</span>
+        <span>Barcelona - Real Madrid</span>
 
         <span class="prediction">OVER 2.5</span>
 
       </div>
 
+      <!-- LOJA 2 -->
+
       <div class="match">
 
-        <span>Team C</span>
+        <span>Inter - Milan</span>
+
+        <span class="prediction">BTTS</span>
+
+      </div>
+
+      <!-- LOJA 3 -->
+
+      <div class="match">
+
+        <span>Arsenal - Chelsea</span>
+
+        <span class="prediction">1X</span>
+
+      </div>
+
+      <!-- LOJA 4 -->
+
+      <div class="match">
+
+        <span>Bayern - Dortmund</span>
+
+        <span class="prediction">OVER 1.5</span>
+
+      </div>
+
+      <!-- LOJA 5 -->
+
+      <div class="match">
+
+        <span>Liverpool - Manchester City</span>
 
         <span class="prediction">BTTS</span>
 
@@ -812,17 +738,17 @@ footer strong{
 
       <div class="match">
 
-        <span>Selection</span>
+        <span>Best Pick</span>
 
-        <span class="prediction">OVER 1.5</span>
+        <span class="prediction">OVER 2.5</span>
 
       </div>
 
       <div class="match">
 
-        <span>Confidence</span>
+        <span>Odd</span>
 
-        <span class="prediction">HIGH</span>
+        <span class="prediction">1.85</span>
 
       </div>
 
@@ -846,7 +772,11 @@ footer strong{
 
     <div class="tag">PREMIUM MEMBERS</div>
 
-    <h2 class="section-title">VIP Tips 🔒</h2>
+    <h2 class="section-title">
+
+      VIP Tips 🔒
+
+    </h2>
 
     <p class="section-subtitle">
 
@@ -870,9 +800,9 @@ footer strong{
 
       <p>
 
-        Get access to premium football selections,
+        Get access to premium football selections
 
-        stronger picks and detailed match analysis.
+        and detailed match analysis.
 
       </p>
 
@@ -900,7 +830,11 @@ footer strong{
 
     <div class="tag">TRACK RECORD</div>
 
-    <h2 class="section-title">Recent Results 📊</h2>
+    <h2 class="section-title">
+
+      Recent Results 📊
+
+    </h2>
 
     <p class="section-subtitle">
 
@@ -954,7 +888,11 @@ footer strong{
 
 <section id="contact" class="contact">
 
-  <div class="tag">GET IN TOUCH</div>
+  <div class="tag">
+
+    GET IN TOUCH
+
+  </div>
 
   <h2 class="section-title">
 
@@ -986,7 +924,7 @@ footer strong{
 
 <footer>
 
-  © 2026 <strong>AJ TIPS</strong> — Premium Football Predictions
+  © 2026 <strong>AJ TIPS</strong> — Football Predictions
 
 </footer>
 
